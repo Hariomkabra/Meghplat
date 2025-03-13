@@ -150,12 +150,6 @@ function App() {
     }
   ];
 
-  const teamValues = [
-    { icon: <Target className="w-8 h-8 text-primary" />, title: 'Innovation First', description: 'Pushing boundaries in AI and technology' },
-    { icon: <Users className="w-8 h-8 text-primary" />, title: 'Collaborative Spirit', description: 'Working together to achieve excellence' },
-    { icon: <Globe className="w-8 h-8 text-primary" />, title: 'Global Impact', description: 'Making a difference worldwide' },
-    { icon: <Award className="w-8 h-8 text-primary" />, title: 'Excellence', description: 'Delivering outstanding results' }
-  ];
 
   const openPositions = [
     {
@@ -285,8 +279,6 @@ function App() {
             </div>
           </div>
 
-          
-
           {/* Values Grid */}
           <div className="grid md:grid-cols-3 gap-8 mt-20">
             <div className="text-center p-8 bg-gray-800 rounded-lg">
@@ -321,26 +313,28 @@ function App() {
       </section>
 
      {/* Services Section */}
-     <section id="services" className="py-16 bg-dark">
+     <section id="services" className="py-20 bg-dark">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-white mb-16">Our Services</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-               <div key={index} className="bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-700 transition duration-300">
+              <div key={index} className="bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-700 transition duration-300">
                 <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
-                <h3 className="text-xl font-bold text-white-900 mb-2">{service.title}</h3>
-                <p className="text-white-600 mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="text-white-600 flex items-start">
-                      <span className="text-primary mr-2">•</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <button className="mt-6 w-full bg-primary text-black px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
-                  Learn More
-                </button>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                  <p className="text-gray-400 mb-4">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="text-gray-400 flex items-start">
+                        <Star className="w-4 h-4 text-primary mt-1 mr-2 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <button className="mt-6 w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
+                    Learn More
+                  </button>
+                </div>
               </div>
             ))}
           </div>
@@ -436,7 +430,9 @@ function App() {
 
 
       {/* Team Section */}
-      <div className="text-center mb-16">
+      <section id="team" className="py-20 bg-dark">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Leadership Team</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Meet the experts and innovators who are driving the future of AI technology
@@ -454,12 +450,21 @@ function App() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-2">{member.role}</p>
-                  <p className="text-gray-400">{member.description}</p>
+                  <p className="text-primary font-semibold mb-3">{member.role}</p>
+                  <p className="text-gray-400 mb-4">{member.description}</p>
+                  <a 
+                    href="#" 
+                    className="inline-flex items-center text-gray-400 hover:text-primary transition-colors"
+                  >
+                    <Linkedin className="w-7 h-7 mr-4" />
+                    
+                  </a>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-dark">

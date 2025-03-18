@@ -353,7 +353,7 @@ function App() {
                   <h3 className="text-xl font-bold text-white mb-2">{study.title}</h3>
                   <p className="text-gray-400">{study.description}</p>
                   <button className="mt-4 text-primary font-semibold hover:text-opacity-80">
-                    Learn More →
+                    Learn More 
                   </button>
                 </div>
               </div>

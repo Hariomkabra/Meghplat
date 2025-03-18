@@ -429,7 +429,7 @@ function App() {
 
 
 
-      {/* Team Section */}
+     {/* Team Section */}
       <section id="team" className="py-20 bg-dark">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -440,29 +440,37 @@ function App() {
             </p>
           </div>
 
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
-                  <p className="text-primary font-semibold mb-3">{member.role}</p>
-                  <p className="text-gray-400 mb-4">{member.description}</p>
-                  <a 
-                    href="#" 
-                    className="inline-flex items-center text-gray-400 hover:text-primary transition-colors"
-                  >
-                    <Linkedin className="w-7 h-7 mr-4" />
-                    
-                  </a>
+                  {teamMembers.map((member, index) => (
+                    <div 
+                      key={index} 
+                      className="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300"
+                    >
+                      <img 
+                        src={member.image} 
+                        alt={member.name} 
+                        className="w-full h-64 object-cover"
+                      />
+                      <div className="p-6">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                          
+                          <Linkedin className="w-7 h-7 text-blue-600" />
+                        </div>
+                        <p className="text-primary font-semibold mb-3">{member.role}</p>
+                        <p className="text-gray-400 mb-4">{member.description}</p>
+                        
+                        <a 
+                          href="#" 
+                          className="inline-flex items-center text-gray-400 hover:text-primary transition-colors"
+                        >
+                          
+                        </a>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

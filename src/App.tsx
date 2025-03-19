@@ -331,9 +331,9 @@ function App() {
                       </li>
                     ))}
                   </ul>
-                  <button className="bg-primary text-black px-8 py-3 rounded-full text-lg hover:bg-opacity-90 transition duration-300">
-                  Learn More
-                  </button>
+                    <button className="w-full bg-primary text-black px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
+                   Learn More
+                    </button>
                 </div>
               </div>
             ))}
@@ -352,9 +352,9 @@ function App() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-2">{study.title}</h3>
                   <p className="text-gray-400">{study.description}</p>
-                  <button className="mt-6 w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
-                    Learn More 
-                  </button>
+                    <button className="w-full bg-primary text-black px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
+                    Learn More
+                    </button>
                 </div>
               </div>
             ))}

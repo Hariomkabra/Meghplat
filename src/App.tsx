@@ -331,8 +331,8 @@ function App() {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-6 w-full bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">
-                    Learn More
+                  <button className="bg-primary text-black px-8 py-3 rounded-full text-lg hover:bg-opacity-90 transition duration-300">
+                  Learn More
                   </button>
                 </div>
               </div>

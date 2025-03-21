@@ -204,11 +204,11 @@ function App() {
                {/* New Elevate Section */}
             <a 
               href="https://uptorsite.netlify.app/"  
-              target="_blank"  
+              target="_blank" 
               rel="noopener noreferrer"
-              className="nav-link text-yellow-500 hover:text-yellow-400"
+             
             >
-              uptor
+              <span className="text-2xl font-bold text-primary">uptor</span>
             </a>
               
               <button className="btn-primary">
@@ -235,7 +235,7 @@ function App() {
               <a href="#contact" className="block py-2 nav-link">Contact</a>
 
               
-               {/* Mobile Elevate Section */}
+                 {/* Mobile Elevate Section */}
             <a 
               href="https://uptorsite.netlify.app/"  
               target="_blank" 

@@ -199,6 +199,19 @@ function App() {
               <a href="#services" className="nav-link">Services</a>
               <a href="#case-studies" className="nav-link">Case Studies</a>
               <a href="#careers" className="nav-link">Careers</a>
+
+               {/* New Elevate Section */}
+            <a 
+              href="https://uptorsite.netlify.app/"  
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="nav-link text-yellow-500 hover:text-yellow-400"
+            >
+              uptor
+            </a>
+
+              
+
               <a href="#contact" className="nav-link">Contact</a>
               <button className="btn-primary">
                 Get Started
@@ -221,6 +234,20 @@ function App() {
               <a href="#services" className="block py-2 nav-link">Services</a>
               <a href="#case-studies" className="block py-2 nav-link">Case Studies</a>
               <a href="#careers" className="block py-2 nav-link">Careers</a>
+
+
+               {/* Mobile Elevate Section */}
+            <a 
+              href="https://uptorsite.netlify.app/"  
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block py-2 nav-link text-yellow-500 hover:text-yellow-400"
+            >
+              uptor
+            </a>
+
+              
+            
               <a href="#contact" className="block py-2 nav-link">Contact</a>
               <button className="mt-4 w-full btn-primary">
                 Get Started

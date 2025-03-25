@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-gradient {
+  background: linear-gradient(to right, #111827, #1f2937);
+}
+
+.nav-link {
+  @apply text-gray-300 hover:text-white transition-colors;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition duration-300;
+}

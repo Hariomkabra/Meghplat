@@ -67,6 +67,15 @@ function Header() {
                   >
                     Carrer
               </a>
+
+             <a 
+                    href="https://workshopuptor.netlify.app/"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="nav-link "
+                  >
+                    Workshop
+              </a>
             
             {/* Auth Buttons */}
             <div className="flex items-center space-x-4">
@@ -111,6 +120,36 @@ function Header() {
             <Link to="/case-studies" className="block py-2 nav-link">Case Studies</Link>
             <Link to="/blog" className="block py-2 nav-link">Blog</Link>
             <Link to="/contact" className="block py-2 nav-link">Contact</Link>
+
+
+
+             <a 
+                    href="https://uptorr.netlify.app/"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="nav-link "
+                  >
+                    Courses
+              </a>
+
+
+            <a 
+                    href="https://uptorsite.netlify.app/"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="nav-link "
+                  >
+                    Carrer
+              </a>
+
+              <a 
+                    href="https://workshopuptor.netlify.app/"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="nav-link "
+                  >
+                    Workshop
+              </a>
             
             {/* Mobile Auth Buttons */}
             <div className="mt-4 space-y-2">

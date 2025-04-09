@@ -7,8 +7,6 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ServiceDetail from './pages/ServiceDetail';
 import CoursesPage from './pages/CoursesPage';
-import DigitalMarketingPage from './pages/DigitalMarketingPage';
-import DataSciencePage from './pages/DataSciencePage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
@@ -24,9 +22,7 @@ function App() {
             <Route path="/about-us" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/services/:serviceId" element={<ServiceDetail />} />
-            
-            <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
-            <Route path="/data-science" element={<DataSciencePage />} />
+            <Route path="/courses" element={<CoursesPage />} />
             <Route path="/case-studies" element={<CaseStudiesPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/contact" element={<ContactPage />} />

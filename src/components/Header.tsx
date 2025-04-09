@@ -23,8 +23,18 @@ function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about-us" className="nav-link">About Us</Link>
+         
             
+            
+           
+          {/* Courses Dropdown */}
+            <div className="relative group">
+            <Link to="/courses" className="nav-link">Courses</Link>
+              <div className="absolute left-0 mt-2 w-56 bg-dark border border-gray-800 rounded-lg shadow-xl hidden group-hover:block z-50">
+              </div>
+            </div>
+
+
             {/* Services Dropdown */}
             <div className="relative group">
               <Link to="/services" className="nav-link">Services</Link>
@@ -41,11 +51,8 @@ function Header() {
               </div>
             </div>
 
-           
-            <Link to="/digital-marketing" className="nav-link">Digital Marketing</Link>
-            <Link to="/data-science" className="nav-link">Data Science</Link>
-            <Link to="/case-studies" className="nav-link">Case Studies</Link>
-            <Link to="/blog" className="nav-link">Blog</Link>
+            <Link to="/case-studies" className="nav-link">Case blog</Link>
+            
             <Link to="/contact" className="nav-link">Contact</Link>
 
 
@@ -76,6 +83,8 @@ function Header() {
                   >
                     Workshop
               </a>
+
+              <Link to="/about-us" className="nav-link">About Us</Link>
             
             {/* Auth Buttons */}
             <div className="flex items-center space-x-4">

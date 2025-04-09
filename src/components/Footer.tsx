@@ -29,10 +29,10 @@ function Footer() {
             <h4 className="text-xl font-bold text-primary mb-6">Quick Links</h4>
             <ul className="space-y-4">
               <li><Link to="/" className="text-gray-400 hover:text-primary transition-colors">Home</Link></li>
-              <li><a href="#about" className="text-gray-400 hover:text-primary transition-colors">About</a></li>
-              <li><a href="#services" className="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+              <li><a href="/about-us" className="text-gray-400 hover:text-primary transition-colors">About</a></li>
+              <li><a href="https://uptorr.netlify.app/" className="text-gray-400 hover:text-primary transition-colors">Services</a></li>
               <li><Link to="/courses" className="text-gray-400 hover:text-primary transition-colors">Courses</Link></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
 

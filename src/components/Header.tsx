@@ -21,7 +21,7 @@ function Header() {
           <Link to="/" className="text-2xl font-bold text-primary">Meghplat</Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             <Link to="/" className="nav-link">Home</Link>
          
             
@@ -29,7 +29,7 @@ function Header() {
            
           {/* Courses Dropdown */}
             <div className="relative group">
-            <Link to="/courses" className="nav-link">Courses</Link>
+            <Link to="/courses" className="nav-link">Learning</Link>
               <div className="absolute left-0 mt-2 w-56 bg-dark border border-gray-800 rounded-lg shadow-xl hidden group-hover:block z-50">
               </div>
             </div>
@@ -54,7 +54,6 @@ function Header() {
             <Link to="/case-studies" className="nav-link">Case blog</Link>
             
             <Link to="/contact" className="nav-link">Contact</Link>
-
 
             <a 
                     href="https://uptorr.netlify.app/"  

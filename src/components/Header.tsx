@@ -130,6 +130,14 @@ function Header() {
           <div className="md:hidden mt-4 pb-4 border-t border-gray-800">
             <Link to="/" className="block py-2 nav-link">Home</Link>
 
+
+            {/* Courses Dropdown */}
+            <div className="relative group">
+            <Link to="/courses" className="nav-link">Learning</Link>
+              <div className="absolute left-0 mt-2 w-56 bg-dark border border-gray-800 rounded-lg shadow-xl hidden group-hover:block z-50">
+              </div>
+            </div>
+
             <Link to="/services" className="block py-2 nav-link">Services</Link>
             {services.map((service, index) => (
               <Link
@@ -141,11 +149,11 @@ function Header() {
               </Link>
             ))}
             <Link to="/courses" className="block py-2 nav-link">Courses</Link>
-            <Link to="/digital-marketing" className="block py-2 nav-link">Digital Marketing</Link>
-            <Link to="/data-science" className="block py-2 nav-link">Data Science</Link>
-            <Link to="/case-studies" className="block py-2 nav-link">Case Studies</Link>
-            <Link to="/blog" className="block py-2 nav-link">Blog</Link>
+
+
+             <Link to="/case-studies" className="nav-link">Case blog</Link>           
             <Link to="/contact" className="block py-2 nav-link">Contact</Link>
+            
 
              <a
                     href="https://uptorr.netlify.app/"

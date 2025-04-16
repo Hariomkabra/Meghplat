@@ -172,7 +172,7 @@ function Header() {
                   onClick={() => setIsResourcesDropdownOpen(false)}
                 >
                   <Briefcase className="w-4 h-4 mr-2" />
-                  Workshop
+                  career
                 </a>
               </div>
             )}

@@ -165,14 +165,14 @@ function Header() {
                   Case Blog
                 </Link>
                 <a
-                  href="https://uptorsite.netlify.app/"
+                  href="https://uptorr.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 text-gray-300 hover:bg-gray-800 hover:text-white flex items-center"
                   onClick={() => setIsResourcesDropdownOpen(false)}
                 >
                   <Briefcase className="w-4 h-4 mr-2" />
-                  Career
+                  Workshop
                 </a>
               </div>
             )}
